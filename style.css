@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.box {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+    border-radius: 6px;
+}
+
+/* Tablet View (>= 772px) */
+@media screen and (min-width: 772px) {
+    .container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .box {
+        width: 45%;
+    }
+
+    img {
+        max-height: 30vh;
+    }
+}
+
+/* Large Screen View (>= 998px) */
+@media screen and (min-width: 998px) {
+    .box {
+        width: 30%;
+    }
+}
